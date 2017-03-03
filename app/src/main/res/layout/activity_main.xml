@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/gray"
+    tools:context="com.example.android.generalmathquiz.MainActivity">
+
+
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome to math quiz"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your name:"
+                    android:textSize="16sp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name" />
+        //------------------------ question 1 -----------------------
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. The average of first\n 50 natural numbers is …………."
+            android:textAppearance="@style/Que_font"
+            />
+        <CheckBox
+            android:text="A. 25.30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Ans_font"
+            android:id="@+id/question1_A" />
+        <CheckBox
+            android:text="B. 25.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Ans_font"
+            android:id="@+id/question1_B" />
+        <CheckBox
+            android:text="C. 25.00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Ans_font"
+            android:id="@+id/question1_C" />
+            </LinearLayout>
+        //------------------------ question 2 -----------------------
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. The number of 3-digit \nnumbers divisible by 6, is ………….."
+            android:textAppearance="@style/Que_font"
+            />
+        <CheckBox
+            android:text="A. 149"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Ans_font"
+            android:id="@+id/question2_A" />
+        <CheckBox
+            android:text="B. 166"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Ans_font"
+            android:id="@+id/question2_B" />
+        <CheckBox
+            android:text="C. 150"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Ans_font"
+            android:id="@+id/question2_C" />
+    </LinearLayout>
+            //------------------------ question 3 -----------------------
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. 1,2,3,1,4,9,1,...27"
+                    android:textAppearance="@style/Que_font"
+                    />
+                <CheckBox
+                    android:text="A. 4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Ans_font"
+                    android:id="@+id/question3_A" />
+                <CheckBox
+                    android:text="B. 16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Ans_font"
+                    android:id="@+id/question3_B" />
+                <CheckBox
+                    android:text="C. 8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Ans_font"
+                    android:id="@+id/question3_C" />
+            </LinearLayout>
+            //------------------------ question 4 -----------------------
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. What is 1004 divided by 2? "
+                    android:textAppearance="@style/Que_font"
+                    />
+                <CheckBox
+                    android:text="A. 52"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Ans_font"
+                    android:id="@+id/question4_A" />
+                <CheckBox
+                    android:text="B. 502"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Ans_font"
+                    android:id="@+id/question4_B" />
+                <CheckBox
+                    android:text="C. 520"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Ans_font"
+                    android:id="@+id/question4_C" />
+            </LinearLayout>
+            //------------------------ question 5 -----------------------
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5. 106 × 106 – 94 × 94 = ?"
+                    android:textAppearance="@style/Que_font"
+                    />
+                <CheckBox
+                    android:text="A. 2400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Ans_font"
+                    android:id="@+id/question5_A" />
+                <CheckBox
+                    android:text="B. 2004"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Ans_font"
+                    android:id="@+id/question5_B" />
+                <CheckBox
+                    android:text="C. 1904"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/Ans_font"
+                    android:id="@+id/question5_C" />
+            </LinearLayout>
+
+            <Button
+                android:text="Get Result"
+                android:layout_marginTop="16dp"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="getScore"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="@style/Que_font"
+                android:id="@+id/result"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
