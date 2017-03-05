@@ -15,25 +15,25 @@
         >
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@color/white"
             android:orientation="vertical">
         //------------------------ question 1 -----------------------
         <TextView
             style="@style/question_font"
             android:text="@string/question1" />
-                    <CheckBox
-                        android:text="A. 25.30"
+                    <RadioButton
+                        android:text="@string/question1_A"
                         style="@style/Answer_font"
                         android:id="@+id/question1_A"
                         android:onClick="onCheckboxClicked"/>
-                    <CheckBox
-                        android:text="B. 25.5"
+                    <RadioButton
+                        android:text="@string/question1_B"
                         style="@style/Answer_font"
                         android:id="@+id/question1_B"
                         android:onClick="onCheckboxClicked"/>
-                    <CheckBox
-                        android:text="C. 25.00"
+                    <RadioButton
+                        android:text="@string/question1_C"
                         style="@style/Answer_font"
                         android:id="@+id/question1_C"
                         android:onClick="onCheckboxClicked"/>
@@ -43,37 +43,34 @@
             android:text="@string/question2"
             />
         <CheckBox
-            android:text="A. 149"
+            android:text="@string/question2_A"
             style="@style/Answer_font"
-            android:id="@+id/question2_A"
-            android:onClick="onCheckboxClicked"/>
+            android:id="@+id/question2_A" />
         <CheckBox
-            android:text="B. 166"
+            android:text="@string/question2_B"
             style="@style/Answer_font"
-            android:id="@+id/question2_B"
-            android:onClick="onCheckboxClicked"/>
+            android:id="@+id/question2_B" />
         <CheckBox
-            android:text="C. 150"
+            android:text="@string/question2_C"
             style="@style/Answer_font"
-            android:id="@+id/question2_C"
-            android:onClick="onCheckboxClicked"/>
+            android:id="@+id/question2_C"/>
             //------------------------ question 3 -----------------------
                 <TextView
                     style="@style/question_font"
                     android:text="@string/question3"
                     />
-                <CheckBox
-                    android:text="A. 4"
+                <RadioButton
+                    android:text="@string/question3_A"
                     style="@style/Answer_font"
                     android:id="@+id/question3_A"
                     android:onClick="onCheckboxClicked"/>
-                <CheckBox
-                    android:text="B. 16"
+                <RadioButton
+                    android:text="@string/question3_B"
                     style="@style/Answer_font"
                     android:id="@+id/question3_B"
                     android:onClick="onCheckboxClicked"/>
-                <CheckBox
-                    android:text="C. 8"
+                <RadioButton
+                    android:text="@string/question3_C"
                     style="@style/Answer_font"
                     android:id="@+id/question3_C"
                     android:onClick="onCheckboxClicked"/>
@@ -82,18 +79,18 @@
                     style="@style/question_font"
                     android:text="@string/question4"
                     />
-                <CheckBox
-                    android:text="A. 52"
+                <RadioButton
+                    android:text="@string/question4_A"
                     style="@style/Answer_font"
                     android:id="@+id/question4_A"
                     android:onClick="onCheckboxClicked"/>
-                <CheckBox
-                    android:text="B. 502"
+                <RadioButton
+                    android:text="@string/question4_B"
                     style="@style/Answer_font"
                     android:id="@+id/question4_B"
                     android:onClick="onCheckboxClicked"/>
-                <CheckBox
-                    android:text="C. 520"
+                <RadioButton
+                    android:text="@string/question4_C"
                     style="@style/Answer_font"
                     android:id="@+id/question4_C"
                     android:onClick="onCheckboxClicked"/>
@@ -102,21 +99,9 @@
                     style="@style/question_font"
                     android:text="@string/question5"
                     />
-                <CheckBox
-                    android:text="A. 2400"
+                <EditText
                     style="@style/Answer_font"
-                    android:id="@+id/question5_A"
-                    android:onClick="onCheckboxClicked"/>
-                <CheckBox
-                    android:text="B. 2004"
-                    style="@style/Answer_font"
-                    android:id="@+id/question5_B"
-                    android:onClick="onCheckboxClicked"/>
-                <CheckBox
-                    android:text="C. 1904"
-                    style="@style/Answer_font"
-                    android:id="@+id/question5_C"
-                    android:onClick="onCheckboxClicked" />
+                    android:id="@+id/question5"/>
             <Button
                 android:text="Get Result"
                 android:textColor="@color/white"
