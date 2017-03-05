@@ -1,8 +1,20 @@
 <resources>
     <string name="app_name">General Math Quiz</string>
     <string name="question1">1. The average of first\n 50 natural numbers is ………….</string>
-    <string name="question2">2. The number of 3-digit \nnumbers divisible by 6, is …………..</string>
+    <string name="question1_A">A. 25.30</string>
+    <string name="question1_B">B. 25.5</string>
+    <string name="question1_C">C. 25.00</string>
+    <string name="question2">2. The prime numbers is ..............\n[Select all possible answer]</string>
+    <string name="question2_A">A. 13</string>
+    <string name="question2_B">B. 17</string>
+    <string name="question2_C">C. 18</string>
     <string name="question3">3. 1,2,3,1,4,9,1,...27</string>
+    <string name="question3_A">A. 4</string>
+    <string name="question3_B">B. 16</string>
+    <string name="question3_C">C. 8</string>
     <string name="question4">4. What is 1004 divided by 2?</string>
+    <string name="question4_A">A. 52</string>
+    <string name="question4_B">B. 502</string>
+    <string name="question4_C">C. 520</string>
     <string name="question5">5. 106 × 106 – 94 × 94 = ?</string>
 </resources>

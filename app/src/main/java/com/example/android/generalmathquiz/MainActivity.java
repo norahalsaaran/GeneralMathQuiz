@@ -5,56 +5,54 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     int score = 0 ;
-    CheckBox question1_A ;
-    CheckBox question1_B ;
-    CheckBox question1_C ;
+    RadioButton question1_A ;
+    RadioButton question1_B ;
+    RadioButton question1_C ;
     CheckBox question2_A ;
     CheckBox question2_B ;
     CheckBox question2_C ;
-    CheckBox question3_A ;
-    CheckBox question3_B ;
-    CheckBox question3_C ;
-    CheckBox question4_A ;
-    CheckBox question4_B ;
-    CheckBox question4_C ;
-    CheckBox question5_A ;
-    CheckBox question5_B ;
-    CheckBox question5_C ;
+    RadioButton question3_A ;
+    RadioButton question3_B ;
+    RadioButton question3_C ;
+    RadioButton question4_A ;
+    RadioButton question4_B ;
+    RadioButton question4_C ;
+    EditText question5 ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
-        question1_A = (CheckBox) findViewById(R.id.question1_A) ;
-        question1_B = (CheckBox) findViewById(R.id.question1_B) ;
-        question1_C = (CheckBox) findViewById(R.id.question1_C) ;
+        question1_A = (RadioButton) findViewById(R.id.question1_A) ;
+        question1_B = (RadioButton) findViewById(R.id.question1_B) ;
+        question1_C = (RadioButton) findViewById(R.id.question1_C) ;
 
         question2_A = (CheckBox) findViewById(R.id.question2_A) ;
         question2_B = (CheckBox) findViewById(R.id.question2_B) ;
         question2_C = (CheckBox) findViewById(R.id.question2_C) ;
 
-        question3_A = (CheckBox) findViewById(R.id.question3_A) ;
-        question3_B = (CheckBox) findViewById(R.id.question3_B) ;
-        question3_C = (CheckBox) findViewById(R.id.question3_C) ;
+        question3_A = (RadioButton) findViewById(R.id.question3_A) ;
+        question3_B = (RadioButton) findViewById(R.id.question3_B) ;
+        question3_C = (RadioButton) findViewById(R.id.question3_C) ;
 
-        question4_A = (CheckBox) findViewById(R.id.question4_A) ;
-        question4_B = (CheckBox) findViewById(R.id.question4_B) ;
-        question4_C = (CheckBox) findViewById(R.id.question4_C) ;
+        question4_A = (RadioButton) findViewById(R.id.question4_A) ;
+        question4_B = (RadioButton) findViewById(R.id.question4_B) ;
+        question4_C = (RadioButton) findViewById(R.id.question4_C) ;
 
-        question5_A = (CheckBox) findViewById(R.id.question5_A) ;
-        question5_B = (CheckBox) findViewById(R.id.question5_B) ;
-        question5_C = (CheckBox) findViewById(R.id.question5_C) ;
+        question5 = (EditText) findViewById(R.id.question5) ;
+
     }
      public void getScore (View view)
      {
          boolean correctAnswer = question1_B.isChecked();
          if (correctAnswer)
                  score++;
-         correctAnswer = question2_C.isChecked();
+         correctAnswer = question2_A.isChecked() && question2_B.isChecked() && !question2_C.isChecked();
          if (correctAnswer)
              score++;
          correctAnswer = question3_C.isChecked();
@@ -63,8 +61,9 @@ public class MainActivity extends AppCompatActivity {
          correctAnswer = question4_B.isChecked();
          if (correctAnswer)
              score++;
-         correctAnswer = question5_A.isChecked();
-         if (correctAnswer)
+         String correctAnswer5 = question5.getText().toString();
+         int Answer5 = Integer.parseInt(correctAnswer5);
+         if (Answer5 == 2400)
              score++;
          displayResult();
      }
@@ -85,19 +84,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.question1_C:
                 question1_A.setChecked(false);
                 question1_B.setChecked(false);
-                break;
-            //-----------------question2-------------------
-            case R.id.question2_A :
-                question2_B.setChecked(false);
-                question2_C.setChecked(false);
-                break;
-            case R.id.question2_B:
-                question2_A.setChecked(false);
-                question2_C.setChecked(false);
-                break;
-            case R.id.question2_C:
-                question2_A.setChecked(false);
-                question2_B.setChecked(false);
                 break;
             //-----------------question3-------------------
             case R.id.question3_A :
@@ -124,19 +110,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.question4_C:
                 question4_A.setChecked(false);
                 question4_B.setChecked(false);
-                break;
-            //-----------------question5-------------------
-            case R.id.question5_A :
-                question5_B.setChecked(false);
-                question5_C.setChecked(false);
-                break;
-            case R.id.question5_B:
-                question5_A.setChecked(false);
-                question5_C.setChecked(false);
-                break;
-            case R.id.question5_C:
-                question5_A.setChecked(false);
-                question5_B.setChecked(false);
                 break;
         }
     }
