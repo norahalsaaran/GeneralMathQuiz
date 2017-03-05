@@ -8,207 +8,131 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/gray"
+    android:background="@drawable/background"
     tools:context="com.example.android.generalmathquiz.MainActivity">
-
-
-
     <ScrollView android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/white"
             android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Welcome to math quiz"
-                    android:textSize="20sp"
-                    />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Your name:"
-                    android:textSize="16sp"
-                    />
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/name" />
         //------------------------ question 1 -----------------------
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="1. The average of first\n 50 natural numbers is …………."
-            android:textAppearance="@style/Que_font"
-            />
-        <CheckBox
-            android:text="A. 25.30"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Ans_font"
-            android:id="@+id/question1_A" />
-        <CheckBox
-            android:text="B. 25.5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Ans_font"
-            android:id="@+id/question1_B" />
-        <CheckBox
-            android:text="C. 25.00"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Ans_font"
-            android:id="@+id/question1_C" />
-            </LinearLayout>
+            style="@style/question_font"
+            android:text="@string/question1" />
+                    <CheckBox
+                        android:text="A. 25.30"
+                        style="@style/Answer_font"
+                        android:id="@+id/question1_A"
+                        android:onClick="onCheckboxClicked"/>
+                    <CheckBox
+                        android:text="B. 25.5"
+                        style="@style/Answer_font"
+                        android:id="@+id/question1_B"
+                        android:onClick="onCheckboxClicked"/>
+                    <CheckBox
+                        android:text="C. 25.00"
+                        style="@style/Answer_font"
+                        android:id="@+id/question1_C"
+                        android:onClick="onCheckboxClicked"/>
         //------------------------ question 2 -----------------------
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:orientation="vertical">
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="2. The number of 3-digit \nnumbers divisible by 6, is ………….."
-            android:textAppearance="@style/Que_font"
+            style="@style/question_font"
+            android:text="@string/question2"
             />
         <CheckBox
             android:text="A. 149"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Ans_font"
-            android:id="@+id/question2_A" />
+            style="@style/Answer_font"
+            android:id="@+id/question2_A"
+            android:onClick="onCheckboxClicked"/>
         <CheckBox
             android:text="B. 166"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Ans_font"
-            android:id="@+id/question2_B" />
+            style="@style/Answer_font"
+            android:id="@+id/question2_B"
+            android:onClick="onCheckboxClicked"/>
         <CheckBox
             android:text="C. 150"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/Ans_font"
-            android:id="@+id/question2_C" />
-    </LinearLayout>
+            style="@style/Answer_font"
+            android:id="@+id/question2_C"
+            android:onClick="onCheckboxClicked"/>
             //------------------------ question 3 -----------------------
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:orientation="vertical">
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="3. 1,2,3,1,4,9,1,...27"
-                    android:textAppearance="@style/Que_font"
+                    style="@style/question_font"
+                    android:text="@string/question3"
                     />
                 <CheckBox
                     android:text="A. 4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="@style/Ans_font"
-                    android:id="@+id/question3_A" />
+                    style="@style/Answer_font"
+                    android:id="@+id/question3_A"
+                    android:onClick="onCheckboxClicked"/>
                 <CheckBox
                     android:text="B. 16"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="@style/Ans_font"
-                    android:id="@+id/question3_B" />
+                    style="@style/Answer_font"
+                    android:id="@+id/question3_B"
+                    android:onClick="onCheckboxClicked"/>
                 <CheckBox
                     android:text="C. 8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="@style/Ans_font"
-                    android:id="@+id/question3_C" />
-            </LinearLayout>
+                    style="@style/Answer_font"
+                    android:id="@+id/question3_C"
+                    android:onClick="onCheckboxClicked"/>
             //------------------------ question 4 -----------------------
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:orientation="vertical">
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="4. What is 1004 divided by 2? "
-                    android:textAppearance="@style/Que_font"
+                    style="@style/question_font"
+                    android:text="@string/question4"
                     />
                 <CheckBox
                     android:text="A. 52"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="@style/Ans_font"
-                    android:id="@+id/question4_A" />
+                    style="@style/Answer_font"
+                    android:id="@+id/question4_A"
+                    android:onClick="onCheckboxClicked"/>
                 <CheckBox
                     android:text="B. 502"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="@style/Ans_font"
-                    android:id="@+id/question4_B" />
+                    style="@style/Answer_font"
+                    android:id="@+id/question4_B"
+                    android:onClick="onCheckboxClicked"/>
                 <CheckBox
                     android:text="C. 520"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="@style/Ans_font"
-                    android:id="@+id/question4_C" />
-            </LinearLayout>
+                    style="@style/Answer_font"
+                    android:id="@+id/question4_C"
+                    android:onClick="onCheckboxClicked"/>
             //------------------------ question 5 -----------------------
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:orientation="vertical">
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="5. 106 × 106 – 94 × 94 = ?"
-                    android:textAppearance="@style/Que_font"
+                    style="@style/question_font"
+                    android:text="@string/question5"
                     />
                 <CheckBox
                     android:text="A. 2400"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="@style/Ans_font"
-                    android:id="@+id/question5_A" />
+                    style="@style/Answer_font"
+                    android:id="@+id/question5_A"
+                    android:onClick="onCheckboxClicked"/>
                 <CheckBox
                     android:text="B. 2004"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="@style/Ans_font"
-                    android:id="@+id/question5_B" />
+                    style="@style/Answer_font"
+                    android:id="@+id/question5_B"
+                    android:onClick="onCheckboxClicked"/>
                 <CheckBox
                     android:text="C. 1904"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="@style/Ans_font"
-                    android:id="@+id/question5_C" />
-            </LinearLayout>
-
+                    style="@style/Answer_font"
+                    android:id="@+id/question5_C"
+                    android:onClick="onCheckboxClicked" />
             <Button
                 android:text="Get Result"
+                android:textColor="@color/white"
                 android:layout_marginTop="16dp"
                 android:textAllCaps="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@color/green"
                 android:layout_gravity="center"
                 android:onClick="getScore"/>
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/question_font"
+                android:textColor="@color/green"
                 android:text=""
-                android:textAppearance="@style/Que_font"
                 android:id="@+id/result"
                 />
-
-
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

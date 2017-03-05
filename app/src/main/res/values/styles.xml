@@ -8,17 +8,24 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="Que_font" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="question_font" >
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingTop">16dp</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/green</item>
 
     </style>
 
-    <style name="Ans_font" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="Answer_font">
         <!-- Customize your theme here. -->
         <item name="android:textSize">16sp</item>
         <item name="android:paddingLeft">24dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/green</item>
     </style>
 
 </resources>

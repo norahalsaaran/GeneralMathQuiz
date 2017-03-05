@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">General Math Quiz</string>
+    <string name="question1">1. The average of first\n 50 natural numbers is ………….</string>
+    <string name="question2">2. The number of 3-digit \nnumbers divisible by 6, is …………..</string>
+    <string name="question3">3. 1,2,3,1,4,9,1,...27</string>
+    <string name="question4">4. What is 1004 divided by 2?</string>
+    <string name="question5">5. 106 × 106 – 94 × 94 = ?</string>
 </resources>
