@@ -148,5 +148,4 @@ public class MainActivity extends AppCompatActivity {
         result.setText(resultMsg );
         score = 0 ;
     }
-
 }
