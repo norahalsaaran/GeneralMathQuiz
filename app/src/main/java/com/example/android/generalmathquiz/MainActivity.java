@@ -1,5 +1,6 @@
 package com.example.android.generalmathquiz;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +8,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     int score = 0 ;
@@ -114,11 +116,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     private void displayResult() {
+        Context context = getApplicationContext();
+        int duration = Toast.LENGTH_SHORT;
         String resultMsg =" Your Score is :" + score;
-        TextView result = (TextView) findViewById(R.id.result);
         if (score == 5 )
             resultMsg = resultMsg + "\nCongratulation! You win" ;
-        result.setText(resultMsg );
+        Toast toast = Toast.makeText(context,resultMsg , duration);
+        toast.show();
         score = 0 ;
     }
 }
